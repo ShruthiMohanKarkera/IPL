@@ -1,0 +1,204 @@
+{
+	"_version": "1.8.0",
+	"sap.app": {
+		"id": "c1.IPL",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_belize"
+		]
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "c1.IPL.view.App",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "c1.IPL.i18n.i18n"
+				}
+			},
+			"jsnModel": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "ipl.json"
+			},
+			"jModel": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "new.json"
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "c1.IPL.view",
+				"controlAggregation": "pages",
+				"controlId": "idAppControl",
+				"clearControlAggregation": false
+			},
+			"routes": [
+				{
+					"name": "RouteView1",
+					"pattern": "",
+					"target": "TargetView1"
+				},
+				{
+					"name": "RouteView2",
+					"pattern": "RouteView1",
+					"target": "V2"
+				},
+				{
+					"name": "RouteView3",
+					"pattern": "RouteView2/{invoicePath}",
+					"target": "V3"
+				},
+				{
+					"name": "RouteView4",
+					"pattern": "RouteView1/{RouteView4}",
+					"target": "Point"
+				},
+				{
+					"name": "RouteView5",
+					"pattern": "Player",
+					"target": "Player"
+				},
+				{
+					"name": "RouteView6",
+					"pattern": "Graph",
+					"target": "Graph"
+				},
+					{
+					"name": "RouteView7",
+					"pattern": "plyrinfo/{index}",
+					"target": "plyr1"
+				}
+			],
+			"targets": {
+				"TargetView1": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "View1",
+					"routerClass": "sap.m.routing.Router",
+					"async": true,
+					"viewPath": "c1.IPL.view",
+					"controlAggregation": "pages",
+					"controlId": "idAppControl"
+				},
+				"V2": {
+					"viewType": "XML",
+					"viewName": "V2",
+					"controlId": "idAppControl",
+					"routerClass": "sap.m.routing.Router",
+					"async": true,
+					"viewPath": "c1.IPL.view",
+					"controlAggregation": "pages",
+					"clearControlAggregation": false
+				},
+				"V3": {
+					"viewType": "XML",
+					"viewName": "V3",
+					"controlId": "idAppControl",
+					"routerClass": "sap.m.routing.Router",
+					"async": true,
+					"viewPath": "c1.IPL.view",
+					"controlAggregation": "pages",
+					"clearControlAggregation": false
+				},
+				"Point": {
+					"viewType": "XML",
+					"viewName": "Point",
+					"controlId": "idAppControl",
+					"routerClass": "sap.m.routing.Router",
+					"async": true,
+					"viewPath": "c1.IPL.view",
+					"controlAggregation": "pages",
+					"clearControlAggregation": false
+				},
+				"Player": {
+					"viewType": "XML",
+					"viewName": "Player",
+					"routerClass": "sap.m.routing.Router",
+					"async": true,
+					"viewPath": "c1.IPL.view",
+					"controlAggregation": "pages",
+					"controlId": "idAppControl",
+					"clearControlAggregation": false
+				},
+				"V4": {
+					"viewType": "XML",
+					"viewName": "V4",
+					"routerClass": "sap.m.routing.Router",
+					"async": true,
+					"viewPath": "c1.IPL.view",
+					"controlAggregation": "pages",
+					"controlId": "idAppControl",
+					"clearControlAggregation": false
+				},
+				"Graph": {
+					"viewType": "XML",
+					"viewName": "Graph",
+					"controlId": "idAppControl",
+					"routerClass": "sap.m.routing.Router",
+					"async": true,
+					"viewPath": "c1.IPL.view",
+					"controlAggregation": "pages",
+					"clearControlAggregation": false
+				},
+				"plyr1": {
+					"viewType": "XML",
+						"controlId": "idAppControl",
+					"viewName": "plyr1"
+				}
+			}
+		}
+	}
+}

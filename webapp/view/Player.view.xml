@@ -1,0 +1,106 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="c1.IPL.controller.Player" xmlns:shru="sap.tnt"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="{i18n>Players}" showNavButton="true" navButtonPress="onNavBack">
+				<!--<content>-->
+				<!--<Toolbar>-->
+				<!--<content>-->
+				<shru:ToolHeader height="auto" width="auto" design="Info" style="Standard" class="sapUiTinyMargin">
+					<ToolbarSpacer/>
+					<!--<Button text="2018" icon="sap-icon://add" press="addepm"/>-->
+					<ComboBox value="{i18n>select}" change="onSortTeam">
+						<items >
+							<core:Item text="{i18n>MostRuns}" id="i1" key="runs"></core:Item>
+							<core:Item text="{i18n>MostAverage}" id="i2" key="avg"></core:Item>
+							<core:Item text="{i18n>MostWickets}" id="i3" key="wickets"></core:Item>
+							<core:Item text="{i18n>Year1}" key="year"></core:Item>
+						</items>
+					</ComboBox>
+					<core:Icon src="sap-icon://sort" press="handleOpenDialog"/>
+					<!--< icon="sap-icon://sort" press="onsort" tooltip="click here to sort"  id="helloDialogButton" class="sapUiSmallMarginEnd" />-->
+					<ComboBox value="{i18n>select}" change="filter">
+						<items >
+							<core:Item text="{i18n>Bangalore}" key="id"></core:Item>
+							<core:Item text="{i18n>Mumbai}" key="id"></core:Item>
+							<core:Item text="{i18n>Chennai}" key="id"></core:Item>
+							<core:Item text="{i18n>Kolkata}" key="id"></core:Item>
+							<core:Item text="{i18n>Rajasthan}" key="id"></core:Item>
+							<core:Item text="{i18n>Delhi}" key="id"></core:Item>
+							<core:Item text="{i18n>Hyderabad}" key="id"></core:Item>
+							<core:Item text="{i18n>Punjab}" key="id"></core:Item>
+						</items>
+					</ComboBox>
+					<ComboBox value="{i18n>select}" change="filter1">
+						<items >
+							<core:Item text="{i18n>18}" key="year"></core:Item>
+							<core:Item text="{i18n>17}" key="year"></core:Item>
+							<core:Item text="{i18n>16}" key="year"></core:Item>
+							<core:Item text="{i18n>15}" key="year"></core:Item>
+						</items>
+					</ComboBox>
+					<Button icon="sap-icon://download" press="onExport" tooltip="click here to download the file"/>
+				</shru:ToolHeader>
+				<!--</content>-->
+				<!--</Toolbar>-->
+				<!--<Bar>
+							<contentRight>
+								<Button text="2018" icon="sap-icon://add" press="addepm"/>
+							</contentRight>
+						</Bar>-->
+				<!--</content>-->
+				<content>
+					<Table id="idTable" items="{jsnModel>/player}" itemPress="onItemPress">
+						<columns>
+							<Column>
+								<Text text="{i18n>Team} "/>
+							</Column>
+							<Column demandPopin="true" minScreenWidth="Tablet">
+								<Text text="{i18n>Name} "/>
+							</Column>
+							<Column demandPopin="true" minScreenWidth="Tablet">
+								<Text text="{i18n>Runs}"/>
+							</Column>
+							<Column demandPopin="true" minScreenWidth="Tablet">
+								<Text text="{i18n>Matches}"/>
+							</Column>
+							<Column demandPopin="true" minScreenWidth="Tablet">
+								<Text text="{i18n>Avg}"/>
+							</Column>
+							<Column demandPopin="true" minScreenWidth="Tablet">
+								<Text text="{i18n>Wicket}"/>
+							</Column>
+							<Column demandPopin="true" minScreenWidth="Tablet">
+								<Text text="{i18n>Hundreds1}"/>
+							</Column>
+							<Column demandPopin="true" minScreenWidth="Tablet">
+								<Text text="{i18n>Fifties1}"/>
+							</Column>
+							<!--	<Column>-->
+							<!--	<Text text="NR"/>-->
+							<!--</Column>-->
+							<Column demandPopin="true" minScreenWidth="Tablet">
+								<Text text="{i18n>Year1}"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem type="Active">
+								<cells>
+									<Text text="{jsnModel>id}"/>
+									<Text text="{jsnModel>playerName}"/>
+									<Text text="{jsnModel>runs}"/>
+									<Text text="{jsnModel>matches}"/>
+									<Text text="{jsnModel>avg}"/>
+									<Text text="{jsnModel>wickets}"/>
+									<Text text="{jsnModel>100s}"/>
+									<Text text="{jsnModel>50s}"/>
+									<Text text="{jsnModel>year}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,70 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="c1.IPL.controller.Point"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="{i18n>Team Points}" showNavButton="true" navButtonPress="onNavBack">
+				<content>
+					<Toolbar>
+						<content>
+							<ToolbarSpacer/>
+							<!--<Button text="2018" icon="sap-icon://add" press="addepm"/>-->
+							<ComboBox value="{i18n>18}" change="sort">
+								<items >
+									<core:Item text="{i18n>18}" id="i1"></core:Item>
+									<core:Item text="{i18n>17}" id="i2"></core:Item>
+									<core:Item text="{i18n>16}" id="i3"></core:Item>
+									<core:Item text="{i18n>15}" id="i4"></core:Item>
+								</items>
+							</ComboBox>
+						</content>
+					</Toolbar>
+					<!--<Bar>
+							<contentRight>
+								<Button text="2018" icon="sap-icon://add" press="addepm"/>
+							</contentRight>
+						</Bar>-->
+				</content>
+				<content>
+					<Table items="{jsnModel>/Eighteen}" itemPress="onItemPress" id="table">
+						<columns>
+							<Column >
+								<Text text="{i18n>Team}"/>
+							</Column>
+							<Column demandPopin="true" minScreenWidth="Tablet">
+								<Text text="{i18n>Matches}"/>
+							</Column>
+							<Column demandPopin="true" minScreenWidth="Tablet">
+								<Text text="{i18n>Won}"/>
+							</Column>
+							<Column demandPopin="true" minScreenWidth="Tablet">
+								<Text text="{i18n>Lost}"/>
+							</Column>
+							<Column demandPopin="true" minScreenWidth="Tablet">
+								<Text text="{i18n>Tied}"/>
+							</Column>
+							<!--	<Column>-->
+							<!--	<Text text="NR"/>-->
+							<!--</Column>-->
+							<Column demandPopin="true" minScreenWidth="Tablet">
+								<Text text="{i18n>Pts}"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem type="Active">
+								<cells>
+									<Text text="{jsnModel>name}"/>
+									<Text text="{jsnModel>matches}"/>
+									<Text text="{jsnModel>won}"/>
+									<Text text="{jsnModel>loss}"/>
+									<Text text="{jsnModel>draw}"/>
+									<!--<Text text="{jsnModel>name}"/>-->
+									<Text text="{jsnModel>points}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

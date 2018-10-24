@@ -1,0 +1,96 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="c1.IPL.controller.plyr1"
+	xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:r="sap.suite.ui.commons"
+	xmlns:viz.data="sap.viz.ui5.data" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns:viz="sap.viz.ui5.controls">
+	<App>
+		<pages>
+			<Page title="{i18n>Profile}" showNavButton="true" navButtonPress="onNavBack">
+				<content>
+					<l:HorizontalLayout class="sapUiContentPadding">
+						<Image id="a6" src="{image}"></Image>
+						<!--			<f:SimpleForm id="SimpleFormChange354wide" editable="true" layout="ResponsiveGridLayout" >-->
+						<!--<f:content>-->
+						<l:VerticalLayout class="sapUiContentPadding">
+							<Label text=""/>
+							<Text id="a21" text="{playerName}"/>
+							<Label text=""/>
+							<Text text="{designation}" id="a23"/>
+							<Label text=""/>
+							<Text text="{id}" id="a24"/>
+						</l:VerticalLayout>
+					</l:HorizontalLayout>
+					<!--</f:content>-->
+					<!--	</f:SimpleForm>-->
+					<IconTabBar id="idIconTabBarNoIcons" expanded="{device>/isNoPhone}" class="sapUiResponsiveContentPadding">
+						<items>
+							<IconTabFilter text="{i18n>Bat}">
+								<f:SimpleForm id="SimpleFormChange354wide" editable="true" layout="ResponsiveGridLayout">
+									<f:content>
+										<Label text="{i18n>Runs}"/>
+										<Text id="a1" text="{runs}"/>
+										<Label text="{i18n>Avg}"/>
+										<Text text="{avg}" id="a3"/>
+										<Label text="{i18n>Hundreds}"/>
+										<Text text="{100s}" id="a4"/>
+										<Label text="{i18n>Fiftys}"/>
+										<Text text="{50s}" id="a5"/>
+									</f:content>
+								</f:SimpleForm>
+							</IconTabFilter>
+							<IconTabFilter text="{i18n>Bowl}">
+								<f:SimpleForm id="SimpleForm" editable="true" layout="ResponsiveGridLayout">
+									<f:content>
+										<Label text="{i18n>Avg}"/>
+										<Text id="a8" text="{avg}"/>
+										<Label text="{i18n>Wicket}"/>
+										<Text text="{wickets}" id="a7"/>
+									</f:content>
+								</f:SimpleForm>
+							</IconTabFilter>
+							<IconTabFilter text="{i18n>Graph}">
+								<Toolbar>
+						<content>
+							<ToolbarSpacer/>
+									<ComboBox value="select" change="Graphedit">
+													<items >
+														<core:Item text="{i18n>linegraph}" ></core:Item>
+														<core:Item text="{i18n>bargraph}" ></core:Item>
+														<core:Item text="{i18n>piegraph}" ></core:Item>
+														<core:Item text="{i18n>columngraph}"></core:Item>
+													</items>
+												</ComboBox>
+								</content>
+								</Toolbar>
+								
+								<r:ChartContainer id="chartContainer" personalizationPress="attachPersonalizationPress" contentChange="attachContentChange"
+									title="{i18n>Playerinfo}">
+									<r:content>
+										<r:ChartContainerContent icon="sap-icon://line-chart" title="Line Chart">
+											<r:content>
+												<viz:VizFrame id="idVizFrame" width="100%" vizType="line" vizProperties="{title:{visible:false}}">
+													<viz:dataset>
+														<viz.data:FlattenedDataset id="idpGraph" data=" ">
+															<viz.data:dimensions>
+																<viz.data:DimensionDefinition name="year" value="{jsnModel>year}"/>
+															</viz.data:dimensions>
+															<viz.data:measures>
+																<viz.data:MeasureDefinition name="Average" value="{jsnModel>win}"/>
+															</viz.data:measures>
+														</viz.data:FlattenedDataset>
+													</viz:dataset>
+													<viz:feeds>
+														<viz.feeds:FeedItem id='valueAxisFeed' uid="valueAxis" type="Measure" values="Average"/>
+														<viz.feeds:FeedItem id='categoryAxisFeed' uid="categoryAxis" type="Dimension" values="year"/>
+													</viz:feeds>
+												</viz:VizFrame>
+											</r:content>
+										</r:ChartContainerContent>
+									</r:content>
+								</r:ChartContainer>
+							</IconTabFilter>
+						</items>
+					</IconTabBar>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

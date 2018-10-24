@@ -1,0 +1,87 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+xmlns="sap.m" controllerName="c1.IPL.controller.Graph" xmlns:viz="sap.viz.ui5.controls"
+xmlns:viz.data="sap.viz.ui5.data"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Title">
+				<content>
+					 <viz:VizFrame id="idVizFrame" 
+                height='100%' width="100%" vizType='line'>
+                <viz:dataset>
+                    <viz.data:FlattenedDataset data="{jsnModel>/graph/bangalore}">
+                        <viz.data:dimensions>
+                            <viz.data:DimensionDefinition name="year"
+                                value="{jsnModel>year}" />
+                        </viz.data:dimensions>
+                        <viz.data:measures>
+                            <viz.data:MeasureDefinition name="win"
+                                value="{jsnModel>/graph/bangalore}" />
+                            <viz.data:MeasureDefinition name="Cost"
+                                value="{jsnModel>win}" />
+                        </viz.data:measures>
+                    </viz.data:FlattenedDataset>
+                </viz:dataset>
+
+                <viz:feeds>
+                    <viz.feeds:FeedItem id='valueAxisFeed' uid="valueAxis" type="Measure"
+                        values="win" />
+                    <viz.feeds:FeedItem id='categoryAxisFeed' uid="categoryAxis" type="Dimension"
+                        values="year" />
+                </viz:feeds>
+            </viz:VizFrame>-->
+            
+            
+            
+            
+            
+            
+            <viz:VizFrame id="idVizFrame" 
+                height='100%' width="100%" vizType='line'>
+                <viz:dataset>
+                    <viz.data:FlattenedDataset data="{jsnModel>/points/twetyeihteen}">
+                        <viz.data:dimensions>
+                            <viz.data:DimensionDefinition name="Year"
+                                value="{jsnModel>year}" />
+                        </viz.data:dimensions>
+                        <viz.data:measures>
+                            <viz.data:MeasureDefinition name="Revenue"
+                                value="{Revenue}" />
+                            <viz.data:MeasureDefinition name="Cost"
+                                value="{Cost}" />
+                        </viz.data:measures>
+                    </viz.data:FlattenedDataset>
+                </viz:dataset>
+
+                <viz:feeds>
+                    <viz.feeds:FeedItem id='valueAxisFeed' uid="valueAxis" type="Measure"
+                        values="Revenue" />
+                    <viz.feeds:FeedItem id='categoryAxisFeed' uid="categoryAxis" type="Dimension"
+                        values="Year" />
+                </viz:feeds>
+            </viz:VizFrame>
+            
+            
+            
+            
+            
+            
+		<!--			<m:FlexBox width="20rem" height="10rem" alignItems="Center" class="sapUiSmallMargin">-->
+		<!--	<m:items>-->
+		<!--		<InteractiveLineChart >-->
+		<!--			<points>-->
+		<!--				<InteractiveLineChartPoint value="33.1" label="May"/>-->
+		<!--				<InteractiveLineChartPoint value="12" label="June"/>-->
+		<!--				<InteractiveLineChartPoint value="51.4" label="July"/>-->
+		<!--				<InteractiveLineChartPoint value="52" label="Aug"/>-->
+		<!--				<InteractiveLineChartPoint value="69.9" label="Sep"/>-->
+		<!--				<InteractiveLineChartPoint value="0.9" label="Oct"/>-->
+		<!--			</points>-->
+		<!--		</InteractiveLineChart>-->
+		<!--	</m:items>-->
+		<!--</m:FlexBox>-->
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

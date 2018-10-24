@@ -1,0 +1,33 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="c1.IPL.controller.V3"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="{alias>/Tweenty/id}" showNavButton="true" navButtonPress="onNavBack">
+				<content>
+					<Toolbar>
+						<content>
+							<ComboBox value="{i18n>select}" change="sort" >
+								<items>
+									<core:Item text="By Runs" id="i1" key="runs"></core:Item>
+									<core:Item text="By Player Name" id="i2" key="playerName"></core:Item>
+									<core:Item text="Avg" id="i3" key="avg"></core:Item>
+								</items>
+							</ComboBox>
+						</content>
+						<ToolbarSpacer/>
+						<SearchField liveChange="onSearch" id="list1" width="40%"/>
+					</Toolbar>
+					<List items="{ path:'alias>/Tweenty/twetyeihteen' , sorter: {path: 'playerName'}}" itemPress="onItemPress" id="list" mode="SingleSelectMaster">
+						<items>
+							<ObjectListItem title="{alias>playerName}" icon="{alias>image}" id="listItem" type = "Active" number="average {alias>avg}" numberUnit="runs {alias>runs}">
+								<attributes>
+									<ObjectAttribute text="{alias>designation}"/>
+								</attributes>
+							</ObjectListItem>
+						</items>
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

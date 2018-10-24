@@ -1,0 +1,27 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:layout="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+	<Dialog id="helloDialog" icon="" title=" ">
+		<f:SimpleForm id="SimpleFormChange354wide" editable="true" layout="ResponsiveGridLayout">
+			<Label width="400px"/>
+			<Image id="a6" src=""></Image>
+			<Label text="Name"/>
+			<Text id="a7" text=""/>
+			<Label/>
+			<!--<Text id="a8" text=""/>-->
+			<f:content>
+				<Label text="Runs"/>
+				<Text id="a1" text=""/>
+				<Label text="Wicket"/>
+				<Text text="" id="a2"/>
+				<Label text="Avg"/>
+				<Text text="" id="a3"/>
+				<Label text="Hundreds"/>
+				<Text text="" id="a4"/>
+				<Label text="match"/>
+				<Text text="" id="a5"/>
+			</f:content>
+		</f:SimpleForm>
+		<beginButton>
+			<Button text="OK" press="Close"/>
+		</beginButton>
+	</Dialog>
+</core:FragmentDefinition>
