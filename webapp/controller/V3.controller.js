@@ -15,7 +15,6 @@ sap.ui.define([
 		 * @memberOf c1.IPL.view.V3
 		 */
 		onInit: function () {
-
 			// 	var ob=this.getParameters().listItem.getBindingContext("jsnModel").getObject(),
 			// omodel=this.getView().getModel("jsnModel");
 			// omodel.setProperty("/Form", ob);
