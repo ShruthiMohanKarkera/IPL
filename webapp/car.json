@@ -1,0 +1,279 @@
+{
+	"Sales":[
+		{
+		"CarName":"Audi Q3",
+		"image":"https://st.motortrend.ca/uploads/sites/10/2016/06/2016-audi-q3-premium-plus-suv-angular-front.png",
+		"Colors":[
+			{
+				"Color1":"Mythos Black",
+				"Color2":"Misano Red",
+				"Color3":"Hanian Blue",
+				"Color4":"Cortina White"
+			}],
+		"Engine":"1395 CC to 1968 CC",
+		"TopSpeed":"204KMPH",
+		"Year":"2018",
+		"Cost":"Rs. 34.73 lakh"
+		
+	},
+		{
+		"CarName":"Audi A4",
+			"image":"https://s.aolcdn.com/commerce/autodata/images/USC70AUC017A021001.jpg",
+		"Colors":[
+			{
+				"Color1":"Tango Red Metallic",
+				"Color2":"Mythos Black",
+				"Color3":"Moonshine Blue",
+				"Color4":"Ibis White"
+			}],
+		"Engine":"1395 CC to 1968 CC",
+		"TopSpeed":"210KMPH",
+		"Year":"1994",
+		"Cost":"Rs. 41.47 lakh"
+		
+	},
+		{
+		"CarName":"Audi A8",
+			"image":"https://st.motortrend.ca/uploads/sites/10/2015/11/2016-audi-a8-l-42-sedan-angular-front.png",
+		"Colors":[
+			{
+				"Color1":"Sand Beige Pearl Eﬀect",
+				"Color2":"Saddle Brown Pearl Eﬀect",
+				"Color3":"Palace Blue Pearl Eﬀect",
+				"Color4":"Moonlight Blue Metallic"
+			}],
+		"Engine":"2967 CC to 6299 CC",
+		"TopSpeed":"250KMPH",
+		"Year":"2002",
+		"Cost":"Rs. 1.23 crore"
+		
+	},
+		{
+		"CarName":"Audi A3",
+			"image":"https://www.cars.com/cstatic-images/car-pictures/xl/usb80auc151a0112.png",
+		"Colors":[
+			{
+				"Color1":"Vegas Yellow",
+				"Color2":"Tango Red Metallic",
+				"Color3":"Glacier White Metallic",
+				"Color4":"Brilliant Black"
+			}],
+		"Engine":"1395 CC to 1968 CC",
+		"TopSpeed":"224KMPH",
+		"Year":"2004",
+		"Cost":"Rs. 33.10 lakh"
+		
+	},
+		{
+		"CarName":"Audi R8",
+			"image":"https://st.motortrend.com/uploads/sites/10/2017/09/2018-audi-r8-coupe-angular-front.png",
+		"Colors":[
+			{
+				"Color1":"Teak Brown Metallic",
+				"Color2":"Suzuka Grey Metallic",
+				"Color3":"Sepang Blue Pearl Effect",
+				"Color4":"Samoa Orange"
+			}],
+		"Engine":"5204 CC",
+		"TopSpeed":"330KMPH",
+		"Year":"2006",
+		"Cost":"Rs. 2.72 crore"
+		
+	},
+		{
+		"CarName":"Audi RS6 Avant",
+			"image":"https://www.audi.in/content/dam/nemo/models/a6/rs-6-avant/my-2018/1920x1080-gallery/1920x1080_ARS6_161001_1.jpg",
+		"Colors":[
+			{
+				"Color1":"Sepang Blue Pearl Effect",
+				"Color2":"Prisma Silver Crystal Effect",
+				"Color3":"Nardo Grey",
+				"Color4":"Misano Red Pearl Effect"
+			}],
+		"Engine":"3993 CC",
+		"TopSpeed":"280KMPH",
+		"Year":"2015",
+		"Cost":"Rs. 1.46 crore"
+		
+	},
+		{
+		"CarName":"Audi RS7",
+			"image":"https://imgct2.aeplcdn.com/img/800x600/car-data/big/audi-rs-7-sportback-default-image.png-version201805041921.png?v=29",
+		"Colors":[
+			{
+				"Color1":"Suzuka Grey Metallic",
+				"Color2":"Nardo Grey",
+				"Color3":"Misano Red Pearl Effect",
+				"Color4":"Estoril Blue Crysta"
+			}],
+		"Engine":"3993 CC",
+		"TopSpeed":"250KMPH",
+		"Year":"2010",
+		"Cost":"Rs. 1.65 crore"
+		
+	},
+		{
+		"CarName":"Audi S5",
+			"image":"http://1-photos7.motorcar.com/new-2018-audi-s5-30tpremiumplus-11350-17707450-1-1024.jpg",
+		"Colors":[
+			{
+				"Color1":"Tango Red Metallic",
+				"Color2":"Blue Graphite Metallic",
+				"Color3":"Mythos Black",
+				"Color4":"Floret Silver Metallic"
+			}],
+		"Engine":"2995 CC",
+		"TopSpeed":"250KMPH",
+		"Year":"2017",
+		"Cost":"Rs. 72.41 lakh"
+		
+	}
+	
+		
+		
+		
+		
+		
+		],
+			"Production":[
+		{
+		"CarName":"Audi S7",
+		"image":"https://62ff7765a0021ee1bc12-7adc2f78e59415aa14b26ab610ef4915.ssl.cf1.rackcdn.com/WAU2FAFC4JN079558/670c38624d53ec4f50f7cbcf2884c84f.jpg",
+		"Colors":[
+			{
+				"Color1":"Mythos Black",
+				"Color2":"Misano Red",
+				"Color3":"Hanian Blue",
+				"Color4":"Cortina White"
+			}],
+		"Engine":"1395 CC to 1968 CC",
+		"TopSpeed":"204KMPH",
+		"Year":"2017",
+		"Cost":"Rs. 34.73 lakh"
+		
+	},
+		{
+		"CarName":"Audi A4",
+			"image":"https://s.aolcdn.com/commerce/autodata/images/USC70AUC017A021001.jpg",
+		"Colors":[
+			{
+				"Color1":"Tango Red Metallic",
+				"Color2":"Mythos Black",
+				"Color3":"Moonshine Blue",
+				"Color4":"Ibis White"
+			}],
+		"Engine":"1395 CC to 1968 CC",
+		"TopSpeed":"210KMPH",
+		"Year":"1994",
+		"Cost":"Rs. 41.47 lakh"
+		
+	},
+		{
+		"CarName":"Audi A8",
+			"image":"https://st.motortrend.ca/uploads/sites/10/2015/11/2016-audi-a8-l-42-sedan-angular-front.png",
+		"Colors":[
+			{
+				"Color1":"Sand Beige Pearl Eﬀect",
+				"Color2":"Saddle Brown Pearl Eﬀect",
+				"Color3":"Palace Blue Pearl Eﬀect",
+				"Color4":"Moonlight Blue Metallic"
+			}],
+		"Engine":"2967 CC to 6299 CC",
+		"TopSpeed":"250KMPH",
+		"Year":"2002",
+		"Cost":"Rs. 1.23 crore"
+		
+	},
+		{
+		"CarName":"Audi A3",
+			"image":"https://www.cars.com/cstatic-images/car-pictures/xl/usb80auc151a0112.png",
+		"Colors":[
+			{
+				"Color1":"Vegas Yellow",
+				"Color2":"Tango Red Metallic",
+				"Color3":"Glacier White Metallic",
+				"Color4":"Brilliant Black"
+			}],
+		"Engine":"1395 CC to 1968 CC",
+		"TopSpeed":"224KMPH",
+		"Year":"2004",
+		"Cost":"Rs. 33.10 lakh"
+		
+	},
+		{
+		"CarName":"Audi R8",
+			"image":"https://st.motortrend.com/uploads/sites/10/2017/09/2018-audi-r8-coupe-angular-front.png",
+		"Colors":[
+			{
+				"Color1":"Teak Brown Metallic",
+				"Color2":"Suzuka Grey Metallic",
+				"Color3":"Sepang Blue Pearl Effect",
+				"Color4":"Samoa Orange"
+			}],
+		"Engine":"5204 CC",
+		"TopSpeed":"330KMPH",
+		"Year":"2006",
+		"Cost":"Rs. 2.72 crore"
+		
+	},
+		{
+		"CarName":"Audi RS6 Avant",
+			"image":"https://www.audi.in/content/dam/nemo/models/a6/rs-6-avant/my-2018/1920x1080-gallery/1920x1080_ARS6_161001_1.jpg",
+		"Colors":[
+			{
+				"Color1":"Sepang Blue Pearl Effect",
+				"Color2":"Prisma Silver Crystal Effect",
+				"Color3":"Nardo Grey",
+				"Color4":"Misano Red Pearl Effect"
+			}],
+		"Engine":"3993 CC",
+		"TopSpeed":"280KMPH",
+		"Year":"2015",
+		"Cost":"Rs. 1.46 crore"
+		
+	},
+		{
+		"CarName":"Audi RS7",
+			"image":"https://imgct2.aeplcdn.com/img/800x600/car-data/big/audi-rs-7-sportback-default-image.png-version201805041921.png?v=29",
+		"Colors":[
+			{
+				"Color1":"Suzuka Grey Metallic",
+				"Color2":"Nardo Grey",
+				"Color3":"Misano Red Pearl Effect",
+				"Color4":"Estoril Blue Crysta"
+			}],
+		"Engine":"3993 CC",
+		"TopSpeed":"250KMPH",
+		"Year":"2010",
+		"Cost":"Rs. 1.65 crore"
+		
+	},
+		{
+		"CarName":"Audi S5",
+			"image":"http://1-photos7.motorcar.com/new-2018-audi-s5-30tpremiumplus-11350-17707450-1-1024.jpg",
+		"Colors":[
+			{
+				"Color1":"Tango Red Metallic",
+				"Color2":"Blue Graphite Metallic",
+				"Color3":"Mythos Black",
+				"Color4":"Floret Silver Metallic"
+			}],
+		"Engine":"2995 CC",
+		"TopSpeed":"250KMPH",
+		"Year":"2017",
+		"Cost":"Rs. 72.41 lakh"
+		
+	}
+	
+		
+		
+		
+		
+		
+		]
+		
+		
+	
+	
+	
+}

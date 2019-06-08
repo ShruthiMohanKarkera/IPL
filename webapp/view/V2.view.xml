@@ -1,50 +1,46 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="c1.IPL.controller.V2"  xmlns:l="sap.ui.layout"
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="c1.IPL.controller.V2" xmlns:l="sap.ui.layout"
 	xmlns:html="http://www.w3.org/1999/xhtml">
 	<App>
 		<pages>
-			<Page title="{i18n>Team}" showNavButton="true"
-					navButtonPress="onNavBack">
-		<!--		<l:VerticalLayout id="containerLayout" width="100%" >-->
-		<!--<l:BlockLayout id="BlockLayout" background="{/selectedBackground}">-->
-		<!--	<l:BlockLayoutRow accentCells="Accent1">-->
-		<!--		<l:BlockLayoutCell	>-->
+			<Page title="{i18n>Team}" showNavButton="true" navButtonPress="onNavBack">
+				<!--		<l:VerticalLayout id="containerLayout" width="100%" >-->
+				<!--<l:BlockLayout id="BlockLayout" background="{/selectedBackground}">-->
+				<!--	<l:BlockLayoutRow accentCells="Accent1">-->
+				<!--		<l:BlockLayoutCell	>-->
 				<Image src="http://www.forevernews.in/wp-content/uploads/2017/05/logoipl.png" width="100%" height="50%"/>
 				<!--</l:BlockLayoutCell>-->
 				<!--</l:BlockLayoutRow>-->
-			
-			
-				<l:VerticalLayout id="containerLayout" width="100%" >
-		<l:BlockLayout id="BlockLayout" background="Light">	
-					<l:BlockLayoutRow accentCells="Accent1">
-				<l:BlockLayoutCell	>
-				<Image src="img/bangalore.png" width="100%" height="100%" press="bangalore"/>
-				</l:BlockLayoutCell>
-				<l:BlockLayoutCell	>
-				<Image src="img/chennai.jpg" width="100%" height="100%" press="bangalore"/>
-				</l:BlockLayoutCell>
-				<l:BlockLayoutCell	>
-				<Image src="img/delhi.png" width="100%" height="100%" press="bangalore"/>
-				</l:BlockLayoutCell><l:BlockLayoutCell	>
-				<Image src="img/hyderabad.png" width="100%" height="100%" press="bangalore"/>
-				</l:BlockLayoutCell>
-				</l:BlockLayoutRow>
-				
-					<l:BlockLayoutRow accentCells="Accent1">
-				<l:BlockLayoutCell	>
-				<Image src="img/kolkatha.png" width="100%" height="100%" press="bangalore"/>
-				</l:BlockLayoutCell>
-				<l:BlockLayoutCell	>
-				<Image src="img/mumbai.jpg" width="100%" height="100%" press="bangalore"/>
-				</l:BlockLayoutCell>
-				<l:BlockLayoutCell	>
-				<Image src="img/punjab.jpg" width="100%" height="100%" press="bangalore"/>
-				</l:BlockLayoutCell>
-				<l:BlockLayoutCell	>
-				<Image src="img/rajasthan.png" width="100%" height="100%" press="bangalore"/>
-				</l:BlockLayoutCell>
-				</l:BlockLayoutRow>
-				
-				</l:BlockLayout>
+				<l:VerticalLayout id="containerLayout" width="100%">
+					<l:BlockLayout id="BlockLayout" background="Light">
+						<l:BlockLayoutRow accentCells="Accent1">
+							<l:BlockLayoutCell >
+								<Image src="img/bangalore.png" width="100%" height="100%" press="bangalore"/>
+							</l:BlockLayoutCell>
+							<l:BlockLayoutCell >
+								<Image src="img/chennai.jpg" width="100%" height="100%" press="bangalore"/>
+							</l:BlockLayoutCell>
+							<l:BlockLayoutCell >
+								<Image src="img/delhi.png" width="100%" height="100%" press="bangalore"/>
+							</l:BlockLayoutCell>
+							<l:BlockLayoutCell >
+								<Image src="img/hyderabad.png" width="100%" height="100%" press="bangalore"/>
+							</l:BlockLayoutCell>
+						</l:BlockLayoutRow>
+						<l:BlockLayoutRow accentCells="Accent1">
+							<l:BlockLayoutCell >
+								<Image src="img/kolkatha.png" width="100%" height="100%" press="bangalore"/>
+							</l:BlockLayoutCell>
+							<l:BlockLayoutCell >
+								<Image src="img/mumbai.jpg" width="100%" height="100%" press="bangalore"/>
+							</l:BlockLayoutCell>
+							<l:BlockLayoutCell >
+								<Image src="img/punjab.jpg" width="100%" height="100%" press="bangalore"/>
+							</l:BlockLayoutCell>
+							<l:BlockLayoutCell >
+								<Image src="img/rajasthan.png" width="100%" height="100%" press="bangalore"/>
+							</l:BlockLayoutCell>
+						</l:BlockLayoutRow>
+					</l:BlockLayout>
 				</l:VerticalLayout>
 			</Page>
 		</pages>

@@ -20,15 +20,15 @@ sap.ui.define([
 			var oView = this.getView();
 			oView.setModel(this.getOwnerComponent().getModel("jsnModel"));
 			oView.bindElement("/player/" + oArg.arguments.index);
-			
-			var graph=oEvent.getParameter("arguments").index;
-			var g=this.getView().getModel("jsnModel").getProperty("/player")[graph].playerName;
+
+			var graph = oEvent.getParameter("arguments").index;
+			var g = this.getView().getModel("jsnModel").getProperty("/player")[graph].playerName;
 			this.getView().byId("idpGraph").bindData("jsnModel>/pgraph/" + g);
-			
+
 		},
-		Graphedit:function(oEvent){
+		Graphedit: function (oEvent) {
 			var olist1 = oEvent.getParameters().value;
-				this.getView().byId("idVizFrame").setVizType(olist1);
+			this.getView().byId("idVizFrame").setVizType(olist1);
 		},
 		onNavBack: function (oEvent) {
 			var oHistory, sPreviousHash;

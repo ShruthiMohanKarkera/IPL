@@ -7,8 +7,9 @@ sap.ui.define([
 	"sap/ui/core/util/Export",
 	"sap/ui/core/util/ExportTypeCSV",
 	'sap/ui/core/Fragment',
-	"sap/ui/core/util/ExportType"
-], function (Controller, Filter, FilterOperator, History, Spreadsheet, Export, ExportTypeCSV, ExportType, Fragment) {
+	"sap/ui/core/util/ExportType",
+	"sap/ui/model/json/JSONModel"
+], function (Controller, Filter, FilterOperator, History, Spreadsheet, Export, ExportTypeCSV, ExportType, Fragment,JSONModel) {
 	"use strict";
 
 	return Controller.extend("c1.IPL.controller.Player", {
@@ -17,6 +18,11 @@ sap.ui.define([
 			// this._getModelData();
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			oRouter.getRoute("RouteView5").attachPatternMatched(this._onObjectMatched, this);
+			
+			// this.getOwnerComponent().getRouter().getRoute("RouteView1").attachPatternMatched(this._onMasterMatched, this);
+			var startupParams = this.getOwnerComponent().getComponentData().startupParameters; // get Startup params from Owner Component
+			this.getView().setModel(new JSONModel(), "jmodel");
+			this.getView().getModel("jmodel").setProperty("/Cross_App_Value", startupParams.Sematic1ID[0]);
 		},
 
 		_onObjectMatched: function (oEvent) {

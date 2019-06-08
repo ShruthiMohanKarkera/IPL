@@ -7,8 +7,10 @@
 				<!--<Toolbar>-->
 				<!--<content>-->
 				<shru:ToolHeader height="auto" width="auto" design="Info" style="Standard" class="sapUiTinyMargin">
+					
 					<ToolbarSpacer/>
-					<!--<Button text="2018" icon="sap-icon://add" press="addepm"/>-->
+					<Text text="{jmodel>/Cross_App_Value}"/>
+					<ToolbarSpacer/>
 					<ComboBox value="{i18n>select}" change="onSortTeam">
 						<items >
 							<core:Item text="{i18n>MostRuns}" id="i1" key="runs"></core:Item>

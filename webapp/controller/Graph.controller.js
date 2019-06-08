@@ -10,21 +10,21 @@ sap.ui.define([
 		 * Can be used to modify the View before it is displayed, to bind event handlers and do other one-time initialization.
 		 * @memberOf c1.IPL.view.Graph
 		 */
-			onInit: function() {
-		// var oVizFrame=this.getView.byId("idVizFrame");
-		// var oDataset=new sap.viz.ui5.data.FlattenedDataset({
-		// 	dimentiones:[{name:"jsnModel",
-		// 		value:"{jsnModel>avg}"
-		// 	}],
-		// 	measures:[{name:"jsnModel",
-		// 		value:"{jsnModel>runs}"}],
-		// 	data:{
-		// 	path:"{jsnModel>/Teams/0/twetyeihteen/0}"	
-		// 	}
-		// });
-		// oVizFrame.setDataset(oDataset);
-		// oVizFrame.setVizType("line");
-			},
+		onInit: function () {
+			// var oVizFrame=this.getView.byId("idVizFrame");
+			// var oDataset=new sap.viz.ui5.data.FlattenedDataset({
+			// 	dimentiones:[{name:"jsnModel",
+			// 		value:"{jsnModel>avg}"
+			// 	}],
+			// 	measures:[{name:"jsnModel",
+			// 		value:"{jsnModel>runs}"}],
+			// 	data:{
+			// 	path:"{jsnModel>/Teams/0/twetyeihteen/0}"	
+			// 	}
+			// });
+			// oVizFrame.setDataset(oDataset);
+			// oVizFrame.setVizType("line");
+		},
 
 		/**
 		 * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered

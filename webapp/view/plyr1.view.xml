@@ -48,19 +48,18 @@
 							</IconTabFilter>
 							<IconTabFilter text="{i18n>Graph}">
 								<Toolbar>
-						<content>
-							<ToolbarSpacer/>
-									<ComboBox value="select" change="Graphedit">
-													<items >
-														<core:Item text="{i18n>linegraph}" ></core:Item>
-														<core:Item text="{i18n>bargraph}" ></core:Item>
-														<core:Item text="{i18n>piegraph}" ></core:Item>
-														<core:Item text="{i18n>columngraph}"></core:Item>
-													</items>
-												</ComboBox>
-								</content>
+									<content>
+										<ToolbarSpacer/>
+										<ComboBox value="select" change="Graphedit">
+											<items >
+												<core:Item text="{i18n>linegraph}"></core:Item>
+												<core:Item text="{i18n>bargraph}"></core:Item>
+												<core:Item text="{i18n>piegraph}"></core:Item>
+												<core:Item text="{i18n>columngraph}"></core:Item>
+											</items>
+										</ComboBox>
+									</content>
 								</Toolbar>
-								
 								<r:ChartContainer id="chartContainer" personalizationPress="attachPersonalizationPress" contentChange="attachContentChange"
 									title="{i18n>Playerinfo}">
 									<r:content>

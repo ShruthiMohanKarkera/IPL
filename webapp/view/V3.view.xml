@@ -6,7 +6,7 @@
 				<content>
 					<Toolbar>
 						<content>
-							<ComboBox value="{i18n>select}" change="sort" >
+							<ComboBox value="{i18n>select}" change="sort">
 								<items>
 									<core:Item text="By Runs" id="i1" key="runs"></core:Item>
 									<core:Item text="By Player Name" id="i2" key="playerName"></core:Item>
@@ -17,9 +17,11 @@
 						<ToolbarSpacer/>
 						<SearchField liveChange="onSearch" id="list1" width="40%"/>
 					</Toolbar>
-					<List items="{ path:'alias>/Tweenty/twetyeihteen' , sorter: {path: 'playerName'}}" itemPress="onItemPress" id="list" mode="SingleSelectMaster">
+					<List items="{ path:'alias>/Tweenty/twetyeihteen' , sorter: {path: 'playerName'}}" itemPress="onItemPress" id="list"
+						mode="SingleSelectMaster">
 						<items>
-							<ObjectListItem title="{alias>playerName}" icon="{alias>image}" id="listItem" type = "Active" number="average {alias>avg}" numberUnit="runs {alias>runs}">
+							<ObjectListItem title="{alias>playerName}" icon="{alias>image}" id="listItem" type="Active" number="average {alias>avg}"
+								numberUnit="runs {alias>runs}">
 								<attributes>
 									<ObjectAttribute text="{alias>designation}"/>
 								</attributes>

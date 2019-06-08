@@ -115,7 +115,7 @@
 					"pattern": "Graph",
 					"target": "Graph"
 				},
-					{
+				{
 					"name": "RouteView7",
 					"pattern": "plyrinfo/{index}",
 					"target": "plyr1"
@@ -195,10 +195,14 @@
 				},
 				"plyr1": {
 					"viewType": "XML",
-						"controlId": "idAppControl",
+					"controlId": "idAppControl",
 					"viewName": "plyr1"
 				}
 			}
 		}
+	},
+	"sap.platform.hcp": {
+		"uri": "webapp",
+		"_version": "1.1.0"
 	}
 }

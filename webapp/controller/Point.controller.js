@@ -53,7 +53,7 @@ sap.ui.define([
 			var shru = oevent.getParameter("listItem").getBindingContextPath().substr(10);
 			var arun = this.getView().getModel("jsnModel").getProperty("/Points").twetyeihteen[shru].name;
 			this.getView().byId("idGraph").bindData("jsnModel>/graph/" + arun);
-
+debugger
 			oDialog.open();
 			var obj = {
 				title: {

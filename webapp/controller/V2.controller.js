@@ -15,7 +15,7 @@ sap.ui.define([
 		//	onInit: function() {
 		//
 		//	},
-		bangalore:function (oevent) {
+		bangalore: function (oevent) {
 			// var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			// oRouter.navTo("RouteView3");
 			//	var ob = oevent.getParameters().listItem.getBindingContext("jsnModel").getObject();
@@ -24,41 +24,39 @@ sap.ui.define([
 			// 	omodel = this.getView().getModel("jModel");
 			// omodel.setProperty("/Form", ob);
 			var team;
-			switch(src){
-			 case "__image5" :
-                    team = "kolkatha";
-                    break;
-                case "__image1":
-                    team = "bangalore";
-                    break;
-                case "__image2":
-                    team = "csk";
-                    break;
-                case "__image3":
-                    team = "DD";
-                    break;
-                case "__image4":
-                    team = "SH";
-                    break;
-                case "__image6":
-                    team = "mumbai";
-                    break;
-                     case "__image7":
-                    team = "Punjab";
-                    break;
-                     case "__image8":
-                    team = "RR";
-                    break;
+			switch (src) {
+			case "__image5":
+				team = "kolkatha";
+				break;
+			case "__image1":
+				team = "bangalore";
+				break;
+			case "__image2":
+				team = "csk";
+				break;
+			case "__image3":
+				team = "DD";
+				break;
+			case "__image4":
+				team = "SH";
+				break;
+			case "__image6":
+				team = "mumbai";
+				break;
+			case "__image7":
+				team = "Punjab";
+				break;
+			case "__image8":
+				team = "RR";
+				break;
 				// console.log(y);
-		
+
 			}
-				 //console.log(src);
+			//console.log(src);
 			var routing = sap.ui.core.UIComponent.getRouterFor(this);
-			routing.navTo("RouteView3",
-			{
-				invoicePath:team
-			}
-			);
+			routing.navTo("RouteView3", {
+				invoicePath: team
+			});
 		},
 		onNavBack: function (oEvent) {
 			var oHistory, sPreviousHash;
@@ -67,7 +65,7 @@ sap.ui.define([
 			if (sPreviousHash !== undefined) {
 				window.history.go(-1);
 			} else {
-				this.getRouter().navTo("RouteView1", {}, true /*no history*/);
+				this.getRouter().navTo("RouteView1", {}, true /*no history*/ );
 			}
 		}
 
